@@ -1,0 +1,18 @@
+title: 'Simi Valley Politics '
+description: >-
+  This is a website weighing the pros and cons of the presidential candidates.
+  Hope you enjoy.
+template:
+  repo: simi-valley-politics-template
+  name: simi-valley-politics
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
